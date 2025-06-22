@@ -30,6 +30,25 @@ int main() {
         passoRainha++;
     } while (passoRainha <= 8);
 
+    printf("\n"); // Separação antes do movimento do Cavalo
+
+    // Simulação do movimento do CAVALO (2 casas para baixo e 1 para a esquerda)
+    // Utiliza loops aninhados: FOR externo e WHILE interno
+    printf("Movimento do Cavalo (2 casas para baixo e 1 para a esquerda):\n");
+
+    int i; // variável para o FOR externo (movimento para baixo)
+    for (i = 1; i <= 2; i++) { // FOR simula as 2 casas para baixo
+        printf("Baixo\n"); // Etapa de movimento vertical
+    }
+
+    // Loop interno (WHILE) para a 1 casa à esquerda
+    int j = 1;
+    while (j <= 1) { // Movimento de 1 casa para esquerda
+        printf("Esquerda\n"); // Etapa de movimento horizontal
+        j++;
+    }
+
     return 0;
 }
+
 
