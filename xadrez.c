@@ -3,14 +3,14 @@
 // ----------------------------------------
 // Função recursiva para movimentar a Torre
 // Movimento: Direita (1 casa por chamada)
-// ----------------------------------------
+
 void moverTorre(int casasRestantes) {
     if (casasRestantes <= 0) return; // Caso base: parar a recursão
     printf("Direita\n"); // Movimento da Torre
     moverTorre(casasRestantes - 1); // Chamada recursiva com 1 casa a menos
 }
 
-// ------------------------------------------------------------------------
+
 // Função recursiva para movimentar o Bispo
 // Movimento: Diagonal para cima e à direita
 // Inclui loops aninhados dentro da recursão para mostrar a estrutura mista
