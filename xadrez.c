@@ -54,3 +54,41 @@ void moverCavalo() {
         }
     }
 }
+
+// ==========================
+// Função principal (main)
+// ==========================
+int main() {
+    // -------------------------
+    // Movimento da Torre (recursivo)
+    // -------------------------
+    int casasTorre = 5;
+    printf("Movimento da Torre (5 casas para a direita):\n");
+    moverTorre(casasTorre); // Função recursiva
+    printf("\n");
+
+    // -----------------------------------------------
+    // Movimento do Bispo (recursivo + loops aninhados)
+    // -----------------------------------------------
+    int movimentoVerticalBispo = 1;
+    int movimentoHorizontalBispo = 1;
+    printf("Movimento do Bispo (5 casas na diagonal para cima e à direita):\n");
+    moverBispo(movimentoVerticalBispo * 5, movimentoHorizontalBispo * 1); // Função recursiva com loop interno
+    printf("\n");
+
+    // -------------------------------
+    // Movimento da Rainha (recursivo)
+    // -------------------------------
+    int casasRainha = 8;
+    printf("Movimento da Rainha (8 casas para a esquerda):\n");
+    moverRainha(casasRainha); // Função recursiva
+    printf("\n");
+
+    // ----------------------------------------
+    // Movimento do Cavalo (loops complexos)
+    // ----------------------------------------
+    moverCavalo(); // Com loops aninhados e controle de fluxo
+    printf("\n");
+
+    return 0;
+}
